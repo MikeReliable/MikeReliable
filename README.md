@@ -1,16 +1,42 @@
-## Hi there 👋
+## 👋 Привет, я Java Backend Developer
 
-<!--
-**MikeReliable/MikeReliable** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Backend-разработчик с коммерческим опытом разработки микросервисных систем на Java.  
+Основная специализация — серверная разработка, REST API, интеграция микросервисов, работа с БД.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🛠 Основной стек
+- **Java:** 8 / 11 / 17 (Collections, Lambda, Stream API)
+- **Frameworks:** Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate
+- **Architecture:** REST, микросервисы, event-driven взаимодействие
+- **Databases:** PostgreSQL, MySQL
+- **Migrations:** Liquibase
+- **Build & DevOps:** Maven, Gradle, Docker, Docker Compose
+- **Messaging:** RabbitMQ
+- **Docs & Tests:** Swagger, JUnit, Mockito, Testcontainers
+- **VCS:** Git
+
+---
+
+### 📌 Проекты
+
+🔹 **restful-service-demo**  
+Spring Boot REST API с JWT-аутентификацией, демонстрация слоистой архитектуры и работы с БД.
+
+🔹 **spring-microservice-app**  
+Пример микросервисной архитектуры с межсервисным взаимодействием (gRPC / messaging).
+
+🔹 **oauth2-demo**  
+Демо-проект с реализацией OAuth2-авторизации и Spring Security.
+
+> Репозитории используются как демонстрация архитектурных подходов и стиля кода.  
+> Основной коммерческий опыт получен в закрытых проектах.
+
+---
+
+### 💼 Опыт
+- Разработка и поддержка backend-микросервисов
+- Проектирование REST API и бизнес-логики
+- Интеграция сервисов через брокеры сообщений
+- Работа с БД, миграциями, логированием
+- Code review, командная разработка
