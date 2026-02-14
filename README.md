@@ -22,7 +22,7 @@ Specialized in REST APIs, event-driven architecture, distributed systems and sec
 
 ### 📌 Featured Projects
 
-🔹 **Distributed Banking Platform**  
+🔹 [**Distributed Banking Platform**](https://github.com/MikeReliable/distributed-banking-platform)  
 Event-driven microservices system with JWT-based authentication, Outbox pattern and Kafka messaging.
 Demonstrates reliable publishing, idempotent consumers and distributed tracing.
 
