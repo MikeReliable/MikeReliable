@@ -1,42 +1,47 @@
-## 👋 Привет, я Java Backend Developer
+## 👋 Hi, I'm a Java Backend / Microservices Developer
 
-Backend-разработчик с коммерческим опытом разработки микросервисных систем на Java.  
-Основная специализация — серверная разработка, REST API, интеграция микросервисов, работа с БД.
+Backend developer focused on building scalable microservices systems with Java and Spring ecosystem.
+Specialized in REST APIs, event-driven architecture, distributed systems and secure service-to-service communication.
 
 ---
 
-### 🛠 Основной стек
-- **Java:** 8 / 11 / 17 (Collections, Lambda, Stream API)
-- **Frameworks:** Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate
-- **Architecture:** REST, микросервисы, event-driven взаимодействие
+### 🛠 Core Stack
+- **Java:** 8 / 11 / 17
+- **Spring:** Spring Boot, Spring Security, Spring Data JPA, Spring Cloud Gateway
+- **Architecture:** Microservices, REST, Event-driven systems, Outbox pattern
+- **Security:** JWT (RS256), OAuth2 Resource Server, RBAC
+- **Messaging:** Apache Kafka, RabbitMQ
 - **Databases:** PostgreSQL, MySQL
 - **Migrations:** Liquibase
-- **Build & DevOps:** Maven, Gradle, Docker, Docker Compose
-- **Messaging:** RabbitMQ
-- **Docs & Tests:** Swagger, JUnit, Mockito, Testcontainers
+- **Testing:** JUnit 5, Mockito, Testcontainers, Awaitility
+- **DevOps:** Maven, Gradle, Docker, Docker Compose
+- **Observability:** Correlation-ID, structured logging
 - **VCS:** Git
 
 ---
 
-### 📌 Проекты
+### 📌 Featured Projects
 
-🔹 **restful-service-demo**  
-Spring Boot REST API с JWT-аутентификацией, демонстрация слоистой архитектуры и работы с БД.
+🔹 **Distributed Banking Platform**  
+Event-driven microservices system with JWT-based authentication, Outbox pattern and Kafka messaging.
+Demonstrates reliable publishing, idempotent consumers and distributed tracing.
 
-🔹 **spring-microservice-app**  
-Пример микросервисной архитектуры с межсервисным взаимодействием (gRPC / messaging).
+🔹 **Spring Microservice App**  
+This project presents microservice architecture based on interaction via the gRPC protocol and Kafka.
 
-🔹 **oauth2-demo**  
-Демо-проект с реализацией OAuth2-авторизации и Spring Security.
+🔹 **Library Demo**  
+This is a Library Simulator that allows CRUD operations on books.
 
-> Репозитории используются как демонстрация архитектурных подходов и стиля кода.  
-> Основной коммерческий опыт получен в закрытых проектах.
+> Public repositories demonstrate architecture decisions, reliability patterns and clean code practices.  
+> Main commercial experience was gained in private enterprise projects.
 
 ---
 
-### 💼 Опыт
-- Разработка и поддержка backend-микросервисов
-- Проектирование REST API и бизнес-логики
-- Интеграция сервисов через брокеры сообщений
-- Работа с БД, миграциями, логированием
-- Code review, командная разработка
+### 💼 Experience Highlights
+- Designing and implementing microservices architectures
+- Building secure REST APIs
+- Implementing reliable messaging with Kafka
+- Transactional Outbox pattern
+- Ensuring idempotency and concurrency safety
+- Database design and migrations
+- Code review and team collaboration
