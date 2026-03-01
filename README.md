@@ -6,7 +6,7 @@ My focus is on designing robust distributed systems with clean architecture, rel
 ---
 
 ### 🛠 Core Stack
-- **Java:** 8 / 11 / 17
+- **Java:** 8 / 11 / 17 / 21
 - **Spring:** Boot, Security (OAuth2, JWT), Data JPA, Cloud Gateway, Cloud OpenFeign
 - **Architecture:** Microservices, REST, Event-driven Design, Transactional Outbox, Idempotent APIs
 - **Security:** JWT (RS256), OAuth2 Resource Server, RBAC, JWKS endpoint
@@ -39,6 +39,25 @@ A production‑like microservices system simulating core banking operations with
 - **Containerized Environment** – Full Docker Compose setup with PostgreSQL, Kafka, and all microservices.
 - **Tech stack:** Java 17, Spring Boot 3, Spring Cloud Gateway, Spring Security OAuth2, JWT, Kafka, PostgreSQL, Liquibase, Testcontainers, Docker.
 
+🔹 **Document Service**
+
+[GitHub Repository](https://github.com/MikeReliable/document-service)  
+A backend service for managing documents with a lifecycle (DRAFT → SUBMITTED → APPROVED), status history, and an approval registry. Implements REST API, batch processing, scheduled workers for automatic status transitions, and a CLI utility for mass document generation.
+
+- **Key features implemented:**
+- **Document Lifecycle** – Atomic status transitions (DRAFT → SUBMITTED → APPROVED) with full history tracking (initiator, action, timestamp).
+- **Approval Registry** – On success, a registry entry is created; if registry insertion fails, the transaction is rolled back (unique constraint ensures single approval).
+- **Batch Processing** – Endpoints for submit/approve handle up to 1000 IDs with parallel chunk processing (configurable chunk size, parallelism, timeout). Partial results are returned on timeout.
+- **Concurrent Approval Test** – Dedicated endpoint to verify optimistic locking behaviour (exactly one success among many parallel attempts).
+- **Background Workers** – Two schedulers (SubmitScheduler, ApproveScheduler) automatically process documents in configurable batches using the batch API.
+- **Search & Indexes** – Search with filters (status, author, creation date period) optimized by a composite index (author, status, created_date DESC). Includes EXPLAIN analysis.
+- **CLI Generator** – Standalone utility to create N documents from a properties file via REST API, with progress logging.
+- **Error Handling** – Uniform error responses ({"code": "...", "message": "..."}) with custom exceptions and a global handler.
+- **Java 21 Features** – Records (DTO), Stream API, CompletableFuture for parallel processing, platform threads with fixed pools.
+- **Integration Tests** – Testcontainers‑based tests covering happy path, batch partial successes, registry rollback, and concurrent approvals.
+- **Tech stack:** Java 21, Spring Boot 3.5.11, PostgreSQL, Liquibase, MapStruct, Lombok, Testcontainers, Maven.
+
+  
 🔹 **Spring Microservice App**  
 This project presents microservice architecture based on interaction via the **gRPC** and **Kafka**.
 
